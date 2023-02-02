@@ -1,0 +1,68 @@
+CREATE TABLE Novel (
+    NID varchar(1000) Primary key,
+    Poster varchar(1000),
+    Theme varchar(30)
+);
+CREATE TABLE Chapter(
+    CID varchar(1000) Primary key,
+    Content varchar(1000),
+    Page varchar(50)
+);
+CREATE TABLE Novel_Chapter(
+    NID varchar(1000),
+    CID varchar(1000), 
+    foreign key(NID) references Novel
+    foreign key(CID) references Chapter
+);
+NID                                                           Poster                                                        Theme  
+------------------------------------------------------------  ------------------------------------------------------------  -------
+https://allnovel.net/always-and-forever-lara-jean-to-all-the  https://allnovel.net/images/always-and-forever-lara-jean-to-  romance
+-boys-i-ve-loved-before-3.html                                all-the-boys-i-ve-loved-before-3.jpg                                 
+
+https://allnovel.net/the-wedding-date.html                    https://allnovel.net/images/the-wedding-date.jpg              romance
+
+https://allnovel.net/blood-fury-black-dagger-legacy-3.html    https://allnovel.net/images/blood-fury-black-dagger-legacy-3  romance
+                                                              .jpg                                                                 
+
+https://allnovel.net/blood-vow-black-dagger-legacy-2.html     https://allnovel.net/images/blood-vow-black-dagger-legacy-2.  romance
+                                                              jpg                                                                  
+
+https://allnovel.net/blood-kiss-black-dagger-legacy-1.html    https://allnovel.net/images/blood-kiss-black-dagger-legacy-1  romance
+                                                              .jpg                                                                 
+
+https://allnovel.net/the-boy-who-sneaks-in-my-bedroom-window  https://allnovel.net/images/the-boy-who-sneaks-in-my-bedroom  romance
+.html                                                         -window.jpg                                                          
+
+https://allnovel.net/taking-it-all-surrender-trilogy-3.html   https://allnovel.net/images/taking-it-all-surrender-trilogy-  romance
+                                                              3.jpg                                                                
+
+https://allnovel.net/giving-in-surrender-trilogy-2.html       https://allnovel.net/images/giving-in-surrender-trilogy-2.jp  romance
+                                                              g                                                                    
+
+https://allnovel.net/letting-go-surrender-trilogy-1.html      https://allnovel.net/images/letting-go-surrender-trilogy-1.j  romance
+                                                              pg                                                                   
+
+https://allnovel.net/married-by-morning-the-hathaways-4.html  https://allnovel.net/images/married-by-morning-the-hathaways  romance
+                                                              -4.jpg                                                               
+
+https://allnovel.net/a-hathaway-wedding-the-hathaways-2-5.ht  https://allnovel.net/images/a-hathaway-wedding-the-hathaways  romance
+ml                                                            -2-5.jpg                                                             
+
+https://allnovel.net/seduce-me-at-sunrise-the-hathaways-2.ht  https://allnovel.net/images/seduce-me-at-sunrise-the-hathawa  romance
+ml                                                            ys-2.jpg                                                             
+
+https://allnovel.net/tempt-me-at-twilight-the-hathaways-3.ht  https://allnovel.net/images/tempt-me-at-twilight-the-hathawa  romance
+ml                                                            ys-3.jpg                                                             
+
+https://allnovel.net/mine-till-midnight-the-hathaways-1.html  https://allnovel.net/images/mine-till-midnight-the-hathaways  romance
+                                                              -1.jpg                                                               
+
+https://allnovel.net/castles-crown-s-spies-4.html             https://allnovel.net/images/castles-crown-s-spies-4.jpg       romance
+
+https://allnovel.net/the-gift-crown-s-spies-3.html            https://allnovel.net/images/the-gift-crown-s-spies-3.jpg      romance
+
+https://allnovel.net/guardian-angel-crown-s-spies-2.html      https://allnovel.net/images/guardian-angel-crown-s-spies-2.j  romance
+                                                              pg                                                                   
+
+https://allnovel.net/the-lion-s-lady-crown-s-spies-1.html     https://allnovel.net/images/the-lion-s-lady-crown-s-spies-1.  romance
+                                                              jpg                                                                  

@@ -1,0 +1,48 @@
+<div class="list-novel">
+
+  <nav id="navbar-example2" class="navbar navbar-light">
+  <ul class="nav nav-pills">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">SELECT CHAPTER</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#chapter-1">Chapter 1</a>
+        <a class="dropdown-item" href="#chapter-2">Chapter 2</a>
+        <a class="dropdown-item" href="#chapter-3">Chapter 3</a>
+        <a class="dropdown-item" href="#chapter-4">Chapter 4</a>
+        <a class="dropdown-item" href="#chapter-5">Chapter 5</a>
+      
+    </li>
+  </ul>
+</nav>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="load-content">
+  {{#each listContent}}
+  <h4 id="chapter-{{this.stt}}">Chapter {{this.stt}}</h4>
+  <p>{{this.content}}</p>
+  {{/each}}
+</div>
+
+</div>
+
+<div class="list-theme">
+     <div class="card" style="width: 100%; background-color:rgb(179, 166, 166);">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+        </div>
+        <ul class="list-group">
+            <li class="list-item" style="background-color: rgb(179, 166, 166);"><a href="/romance">Romance</a></li>
+            <li class="list-item" style="background-color: rgb(179, 166, 166);"><a href="/adventure">Adventure</a></li>
+            <li class="list-item" style="background-color: rgb(179, 166, 166);"><a href="/thriller">Thriller</a></li>
+            <li class="list-item" style="background-color: rgb(179, 166, 166);"><a href="/fantasy">Fantasy</a></li>
+            <li class="white-space"></li>
+        </ul>
+    </div>
+    
+</div>
+
+{{!-- <script>
+  //truy cập vào và xóa chapter đi khi click vào chapter mới
+  document.addEventListener("DOMContentLoaded", function(){
+    var tag1 = document.querySelector(".load-content");
+    console.log(tag1);
+  });
+</script> --}}
