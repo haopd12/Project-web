@@ -20,7 +20,9 @@ class NewController
 
     async show(req, res) {
         console.log(getContent(req.params.slug));
-        
+        // var list = getContent(req.params.slug);
+        // console.log(list);
+        // console.log(req.params.slug);
         function renderNovel() {
             return res.render('theme-site', {
                         listContent: getContent(req.params.slug),
@@ -33,6 +35,11 @@ class NewController
         const data = await sleep(renderNovel, false);
 
     }
+
+    // search(req, res)
+    // {
+    //     res.send('search results');
+    // }
 }
 
 module.exports = new NewController();

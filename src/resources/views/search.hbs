@@ -1,11 +1,24 @@
-<div class="mt-4">
-    <form method="POST" >
-    <div class="form-group">
-        <label for="search-input">Từ khóa</label>
-        <input type="text" name="q" class="form-control" id="search-input"  placeholder="Nhập từ khóa">
+<div class="search-site" style="padding-top:6rem;">
+<div class="mt-4" style="
+    display: block;
+    margin: 0 35%;
+    padding: 3% 3%;
+    border-radius: 5%;
+    width: 30%;
+    background-color: #5b759c;
+    ">
+    <form method="GET" action="/search">
+    <div class="form-group" style="text-align:center;">
+        <label for="search-input" style=" margin-bottom: 2rem; font-size: xx-large;
+        font-weight: 600;
+        color:#fff;">Novel</label>
+        <input type="text" name="q" class="form-control" id="search-input"  placeholder="Search Novel">
         
     </div>
 
-    <button type="submit" class="btn btn-primary">Tìm kiếm</button>
+    <div class="search-submit" style="text-align:center;">
+        <button type="submit" class="btn btn-primary" >SEARCH</button>
+    </div>
     </form>
+</div>
 </div>
