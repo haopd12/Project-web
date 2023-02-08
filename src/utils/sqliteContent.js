@@ -11,6 +11,7 @@ let listContent = [];
 
 module.exports = {
     getContent: function(name) {
+        console.log(name);
         db.serialize(() => {
             db.each(`SELECT *
                     FROM Novel_Chapter as NC, Chapter as C

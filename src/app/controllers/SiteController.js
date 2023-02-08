@@ -19,7 +19,9 @@ class SiteController
     
 
     async show(req, res) {
+        // console.log(req);
         console.log(getContent(req.params.slug));
+        
         function renderNovel() {
             return res.render('theme-site', {
                         listContent: getContent(req.params.slug),
