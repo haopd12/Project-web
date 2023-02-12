@@ -14,6 +14,9 @@ html{
     // background-color: red;
     margin: 10px 5%  ;
 }
+.app{
+  height: 100%;
+}
 
 
 //Novel Cards
@@ -54,13 +57,13 @@ html{
     padding-left: 3%;
     padding-top: 30px;
     width: 75%;
-    
+    border-radius: 20px;
     background-color: rgb(179, 166, 166);
 }
 
 .list-theme {
     display: inline-block;
-    // clear: right;
+    border-radius: 15%;
     float: right;
     margin-top: 70px;
     height: 20px;
@@ -284,42 +287,22 @@ section {
 
 }
 
-//carousel css
-// .carousel-novel{
-//   margin: 0 5%;
-//   height: 300px;
-//   background-color: red;
-// }
-// // .carousel-item ul{
-// //   display: inline-block;
-// // }
-// li {
-//   list-style: none;
-// }
-// .carousel-list {
-//   // display: inline-block;
-//   text-align: center;
-//   margin-left: 5%;
-// }
-// .carousel-1 ul li{
-//   display: block;
-//   float: left;
-//   // text-align: center;
-//   padding:0 3%;
-// }
-// .carousel-1 ul li img{
-//   height:15rem;
-// }
+#search-novel{
+  width: 65%;
+  // height: 30rem;
+}
+#search-bar{
+  width: 20%;
+  height: 15rem;
+  padding: 3% 2%;
+  border-radius: 15%;
+  text-align: center;
+}
 
-// .carousel-0 {
-//   display: flex;
-//   list-style: none;
-//   overflow: auto;
-//   scroll-snap-type: x mandatory;
-// }
-
-// .carousel-1{
-//   flex-shrink: 0;
-//   width: 100%;
-//   scroll-snap-align: start;
-// }
+#search-bar label {
+  font-size: x-large;
+  font-weight: 600;
+}
+#space{
+  height: 30rem;
+}

@@ -10,6 +10,9 @@ html {
 .best-novel {
   margin: 10px 5%; }
 
+.app {
+  height: 100%; }
+
 .row .card {
   display: inline-block;
   float: left;
@@ -43,10 +46,12 @@ html {
   padding-left: 3%;
   padding-top: 30px;
   width: 75%;
+  border-radius: 20px;
   background-color: #b3a6a6; }
 
 .list-theme {
   display: inline-block;
+  border-radius: 15%;
   float: right;
   margin-top: 70px;
   height: 20px;
@@ -224,3 +229,20 @@ section {
     text-align: center; }
   .footer-distributed .footer-center i {
     margin-left: 0; } }
+
+#search-novel {
+  width: 65%; }
+
+#search-bar {
+  width: 20%;
+  height: 15rem;
+  padding: 3% 2%;
+  border-radius: 15%;
+  text-align: center; }
+
+#search-bar label {
+  font-size: x-large;
+  font-weight: 600; }
+
+#space {
+  height: 30rem; }
