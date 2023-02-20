@@ -1,0 +1,37 @@
+    <div class="list-novel" id="search-novel">
+        <div class="mt-4">
+        <form action="post">
+        <div class="row">
+            {{#each list}}
+            <div class="card" style="width: 10rem;">
+            <img src={{this.Poster}} class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="card-text">{{this.ID}}</p>
+                <a href="{{this.url_route}}/{{this.Name}}" class="btn btn-primary">Read</a>
+                
+            </div>
+            </div>
+            {{/each}}
+        
+        </div>
+        </form>
+    </div>
+    </div>
+    
+    <div class="list-theme" id="search-bar">
+        <form method="GET">
+        <div class="form-group" >
+            <label for="search-input" style="">Novel</label>
+            <input type="text" name="q" class="form-control" id="search-input"  placeholder="Search Novel">  
+        </div>
+
+        <div class="search-submit" >
+            <button type="submit" class="btn btn-primary" >SEARCH</button>
+        </div>
+        </form>
+    </div>
+
+
+
+
+    

@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./Json Scrapper",
+        "./JsonScrapper"
+    ]
+}
